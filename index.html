@@ -5,35 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Desarrollo Web</title>
-    <link rel="preload" href="CSS/Style.css" as="style">
+    <link rel="preload" href="./CSS/Style.css" as="style">
     <link rel="shortcut icon" href="imagenes/favicon.ico">
-    <!-- <link rel="stylesheet" href="CSS/Style.css"> -->
     <link rel="stylesheet" href="./CSS/Style.css">
 </head>
     
 <body class="body">
 
     <header class="header">
-
-        <a href="#hero" class="header__logo-container">
-            <img src="https://i.postimg.cc/BbgQ48dp/logo-base2-wpo.png" alt="logo" class="header__logo" width="107" height="32" />
-        </a>
-
         <nav class="header-nav">
-                <ul class="header__nav-list">
-                    <li>
-                        <a href="./Quienes_somos/index.html" target="_blank" rel="noopener noreferrer" class="header__nav-link">Quienes Somos</a>  
-                    </li>
-                    <li >
-                        <a href="#reco" class="header__nav-link">Recomendaciones</a>
-                    </li>
-                    <li >
-                        <a href="#" class="header__nav-link">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/johnpaulcastrorengifo-89630568/" target="_blank" rel="noopener noreferrer" class="header__nav-link">John Castro</a>  
-                    </li>
-                </ul>
+        <div class="header-nav__container">
+            <a href="#hero" class="header-nav__link-logo-container">
+                <img src="https://i.postimg.cc/BbgQ48dp/logo-base2-wpo.png" alt="logo" class="header-nav__link-logo" width="107" height="32" />
+            </a>
+
+            <ul class="header-nav__menu-list">
+                <li class="header-nav__menu-item">
+                    <a href="./Quienes_somos/index.html" target="_blank" rel="noopener noreferrer" class="header-nav__menu-link">Quienes Somos</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#reco" class="header-nav__menu-link">Recomendaciones</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#" class="header-nav__menu-link">Servicios</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="https://www.linkedin.com/in/johnpaulcastrorengifo-89630568/" target="_blank" rel="noopener noreferrer" class="header-nav__menu-link header-nav__menu-link--active">John Castro</a>
+                </li>
+            </ul>
+        </div>
         </nav>
 
     </header>
