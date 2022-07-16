@@ -1,18 +1,21 @@
 .body{
     background-color: #e6dfee;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     color: #141313;
+    font-family: 'Taviraj', serif;
     margin:0;
 }
 
 .header{
+    
     background-color: #cbc3ce;
+    height: 4rem;
     box-shadow: 0 0 0.125rem 0.0625rem black;
 }
 
 .header-nav{
-    padding: 1rem o;
+    /* padding: 1rem o; */
+    display: block;
+    align-content: flex-end;
 }
 
 .header-nav__container{
@@ -37,9 +40,39 @@
     object-fit: cover;
 }
 
+.header-nav__menu-label{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: text-shadow 0.25s;
+}
+
+.header-nav__menu-label:hover{
+    text-shadow: 0 0 0.25rem #61dafb;
+    text-shadow: 0 0 0.5rem #61dafb;
+}
+
+.header-nav__menu-icon{
+    display: none;
+}
+
+.header-nav__menu-icon:checked+.header-nav__menu-list {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .header-nav__menu-list{
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #20232a;
+    opacity: 0;
+    pointer-events: none;
     display: flex;
-    /* align-items: center; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
     margin: 0;
     padding: 0;
@@ -50,11 +83,19 @@
     display: flex;
 }
 
+.header-nav__menu-item--close-icon{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 .header-nav__menu-link{
     position: relative;
     color: rgb(230, 11, 11);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 900;
     transition: color 0.25s;
 }
 
